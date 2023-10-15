@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("../fonts/JetBrainsMonoNL-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+.font_color-pl {
+    color: var(--font-primary-light)
+}
+
+.font_color-pd {
+    color: var(--font-primary-dark)
+}
+
+.font_color-sl {
+    color: var(--font-secondary-light)
+}
+
+.font_color-sd {
+    color: var(--font-secondary-dark)
+}
+
+.font_weight-300 {
+    font-weight: 300;
+}
+
+.font_weight-400 {
+    font-weight: 400;
+}
+
+.font_weight-500 {
+    font-weight: 500;
+}
+
+.font_weight-700 {
+    font-weight: 700;
+}
+
+.font_size-s {
+    font-size: var(--font-size-s);
+}
+
+.font_size-m {
+    font-size: var(--font-size-m);
+}
+
+.font_size-l {
+    font-size: var(--font-size-l);
+}
+
+.font_size-xl {
+    font-size: var(--font-size-xl);
+}
+
+.font_size-xxl {
+    font-size: var(--font-size-xxl);
+}
+
+.font_size-xxxl {
+    font-size: var(--font-size-xxxl);
+}

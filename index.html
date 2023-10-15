@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body class="flex flex_column">
+    <header class="flex flex_align-center flex_justify-between">
+        <div class="flex grid-column_6 flex_justify-start flex_align-center header-left">   
+            <h2 class="font_color-sl font_size-xxl font_weight-700 header-title">JobsIT</h2>
+            <nav class="header-navigation">
+                <ul class="flex header-navigation__list">
+                    <li>
+                        <a class="font_color-sd font_size-m" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="font_color-sd font_size-m" href="stats.html">Stats</a>
+                    </li>
+                    <li>
+                        <a class="font_color-sd font_size-m" href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex grid-column_6 flex_justify-end header-right">   
+            <button class="button_small button_text font_color-pl font_size-m">Sign in</button>
+            <button class="button_small button_secondary font_color-sl font_size-m font_weight-500">Sign up</button>
+        </div>
+    </header>
+    <main>  
+        <div class="flex flex_column flex_justify-center main-wrapper">  
+            <section class="flex flex_column main-content">  
+                <section class="flex flex_column flex_align-center text-container">
+                    <h1 class="font_color-pl font_size-xxxl font_weight-500">Find your dream job!</h1>
+                    <pre>Dream jobs just like you've been dreaming and jobbing about!</pre>
+                </section>
+                <section class="flex flex_justify-center flex_align-center search-container">
+                    <form class="flex flex_justify-center search-form">
+                        <input type="text" name="position" placeholder="Front-end Developer">
+                        <input type="text" name="location" placeholder="Russia, Saint-Petersburg">
+                        <button class="button_large button_primary font_color-pl font_size-l">Search</button>
+                    </form>
+                </section>
+                <section class="flex flex_justify-center flex_align-center stat-container">
+                    <div class="flex flex_justify-between flex_align-center stats">  
+                        <div>
+                            <div class="avatar"><img src="./images/Avatar-1.png" alt="Avatar"></div>
+                            <div class="avatar"><img src="./images/Avatar-2.png" alt="Avatar"></div>
+                            <div class="avatar"><img src="./images/Avatar-3.png" alt="Avatar"></div>
+                            <div class="avatar"><img src="./images/Avatar-4.png" alt="Avatar"></div>
+                        </div>
+                        <div>
+                            <h4 class="font_color-pl">500+</h4>
+                            <p class="font_color-pl font_weight-300">CVs</p>
+                        </div>
+                        <div>
+                            <h4 class="font_color-pl">500+</h4>
+                            <p class="font_color-pl font_weight-300">Employees</p>
+                        </div>
+                        <div>
+                            <h4 class="font_color-pl">100+</h4>
+                            <p class="font_color-pl font_weight-300">Companies</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>    
+        <div>
+            <p class="font_color-pl font_weight-300">&#169 2023 Mariyorda</p>
+        </div>
+    </footer>
+</body>
+</html>

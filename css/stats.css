@@ -1,0 +1,44 @@
+.main-wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 100%;
+}
+
+.container {
+    padding: var(--spacing-xxxl) 0;
+}
+
+.stats {
+    background-color: var(--secondary-dark);
+    border-radius: var(--spacing-l);
+    padding: calc(var(--spacing-xxxl) * 1.25);
+}
+
+.stats-table {
+    width: 100%;
+}
+
+.stats-table > thead > tr {
+    display: grid;
+    background-color: var(--dark-grey);
+    color: var(--font-secondary-light);
+    text-align: left;
+    padding: var(--spacing-l) 0;
+}
+
+.stats-table > tbody > tr {
+    display: grid;
+    margin-top: var(--spacing-xxxl);
+    padding: var(--spacing-l) 0;
+}
+
+.stats-table > tbody > tr:nth-of-type(2n) {
+    background-color: var(--dark-grey);
+    color: var(--font-primary-light);
+}
+
+.stats-table > tbody > tr:nth-of-type(2n+1) {
+    background-color: var(--light-grey);
+    color: var(--font-primary-light);
+}
+

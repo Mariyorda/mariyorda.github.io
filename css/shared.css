@@ -1,0 +1,58 @@
+header, footer {
+    background-color: var(--primary-dark);
+    padding: var(--spacing-l);
+}
+
+.header-left > .header-title {
+    margin-bottom: 0;
+}
+
+.header-left > .header-navigation {
+    margin-left: var(--spacing-xl);
+}
+
+.header-right button:first-of-type {
+    margin-right: var(--spacing-m);
+}
+
+.header-navigation {
+    margin-left: var(--spacing-xl);
+}
+
+.header-navigation__list > li:not(:last-of-type) {
+    margin-right: var(--spacing-l);
+}
+
+button {
+    font-family: "Barlow";
+    border-radius: var(--spacing-l);
+}
+
+.button_small {
+    padding: var(--spacing-m) var(--spacing-xl);
+}
+
+.button_medium {
+    padding: var(--spacing-m) var(--spacing-l);
+}
+
+.button_large {
+    padding: var(--spacing-m) var(--spacing-xxl);
+}
+
+.button_primary {
+    background-color: var(--secondary-light);
+}
+
+.button_secondary {
+    background-color: var(--primary-light);
+}
+
+.button_info {
+    background-color: var(--secondary-dark);
+}
+
+.button_text {
+    background-color: transparent;
+}
+
