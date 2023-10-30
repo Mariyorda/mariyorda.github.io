@@ -1,0 +1,15 @@
+.paper_background-color_dark {
+    background-color: var(--secondary-dark);
+}
+
+.paper_background-color_main {
+    background-color: var(--primary-main);
+}
+
+.paper_border-radius_l {
+    border-radius: var(--spacing-l);
+}
+
+.paper_p_ul {
+    padding: var(--spacing-ul);
+}

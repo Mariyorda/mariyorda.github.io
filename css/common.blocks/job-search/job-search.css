@@ -1,0 +1,17 @@
+.job-search {
+    padding: var(--spacing-m) 0;
+}
+
+.job-search .job-search__form {
+    width: 100%;
+}
+
+.job-search_large .job-search__input {
+    width: 35%;
+    margin-right: var(--spacing-xl)
+}
+
+.job-search_small .job-search__input {
+    width: 20%;
+    margin-right: var(--spacing-xl)
+}

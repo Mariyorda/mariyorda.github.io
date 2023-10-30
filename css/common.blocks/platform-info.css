@@ -1,0 +1,3 @@
+.platform-info .platform-info__item:not(:last-of-type) {
+    margin-right: var(--spacing-xxxl);
+}

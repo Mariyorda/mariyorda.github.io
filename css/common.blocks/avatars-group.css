@@ -1,0 +1,3 @@
+.avatars-group .avatars-group__item:not(:last-of-type) {
+    margin-right: -24px;
+}

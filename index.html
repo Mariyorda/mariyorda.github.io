@@ -5,77 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/pages/home.css">
 </head>
 <body class="flex flex_column">
-    <header class="flex flex_align-center flex_justify-between">
-        <div class="flex grid-column_6 flex_justify-start flex_align-center header-left">   
-            <h2 class="font_color-sl font_size-xxl font_weight-700 header-title">JobsIT</h2>
-            <nav class="header-navigation">
-                <ul class="flex header-navigation__list">
-                    <li>
-                        <a class="font_color-sd" href="./index.html">Home</a>
+    <header class="header flex flex_align_center flex_justify_between">
+        <div class="header__left flex flex_justify_start flex_align_center">   
+            <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold">JobsIT</h2>
+            <nav class="header__navigation">
+                <ul class="flex">
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="./index.html">Home</a>
                     </li>
-                    <li>
-                        <a class="font_color-sd" href="./html/stats.html">Stats</a>
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="./html/stats.html">Stats</a>
                     </li>
-                    <li>
-                        <a class="font_color-sd" href="./html/about.html">About us</a>
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="./html/about.html">About us</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="flex grid-column_6 flex_justify-end header-right">   
-            <button class="button_small button_text font_color-pl">Sign in</button>
-            <button class="button_small button_secondary font_color-sl font_weight-500">Sign up</button>
+        <div class="flex flex_justify_end">   
+            <button class="button button_small button_text text text_color_primary-light text_font-size_l text_font-weight_medium">Sign in</button>
+            <button class="button button_small button_secondary text_color_secondary-light text text_font-size_l text_font-weight_medium">Sign up</button>
         </div>
     </header>
-    <main>  
-        <div class="flex flex_align-center flex_justify-center main-wrapper">  
-            <section class="flex flex_column main-content">  
-                <section class="flex flex_column flex_align-center text-container">
-                    <h1 class="font_color-pl font_size-xxxl font_weight-500">Find your dream job!</h1>
-                    <pre>Dream jobs just like you've been dreaming and jobbing about!</pre>
+    <main class="flex flex_column flex_justify_center">  
+        <div class="main-wrapper main-wrapper_width_m flex flex_align_center flex_justify_center">  
+            <section class="search-banner flex flex_column">  
+                <section class="search-banner__section flex flex_column flex_align_center">
+                    <h1 class="text text_heading_1 text_color_primary-light text_font-size_xxxl text_font-weight_medium">Find your dream job!</h1>
+                    <pre class="code code_background-color_dark code_color_light code_p_l code_border-radius_l"># Dream jobs just like you've been dreaming and jobbing about!</pre>
                 </section>
-                <section class="flex flex_justify-center flex_align-center search-container">
-                    <form method="get" action="./html/jobs.html" class="flex flex_justify-center search-form">
-                        <input type="text" name="position" placeholder="Front-end Developer">
-                        <input type="text" name="location" placeholder="Russia, Saint-Petersburg">
-                        <button class="button_large button_primary font_color-pl font_size-l">Search</button>
+                <section class="search-banner__section job-search job-search_large flex flex_justify_center flex_align_center">
+                    <form method="get" action="./html/jobs.html" class="job-search__form flex flex_justify_center">
+                        <input class="job-search__input" type="text" name="position" placeholder="Front-end Developer">
+                        <input class="job-search__input" type="text" name="location" placeholder="Russia, Saint-Petersburg">
+                        <button class="button button_large button_primary text text_color_primary-light text_font-size_l">Search</button>
                     </form>
                 </section>
-                <section class="flex flex_justify-center flex_align-center stat-container">
-                    <div class="flex flex_justify-between flex_align-center stats">  
-                        <div>
-                            <div class="avatar"><img src="./images/Avatar-1.png" alt="Avatar"></div>
-                            <div class="avatar"><img src="./images/Avatar-2.png" alt="Avatar"></div>
-                            <div class="avatar"><img src="./images/Avatar-3.png" alt="Avatar"></div>
-                            <div class="avatar"><img src="./images/Avatar-4.png" alt="Avatar"></div>
+                <section class="search-banner__section flex flex_justify_center flex_align_center">
+                    <div class="platform-info search-banner__stats flex flex_justify_between flex_align_center">  
+                        <div class="platform-info__item avatars-group">
+                            <div class="avatars-group__item avatar avatar_size_m avatar_is-circular">
+                                <img class="avatar__image" src="./images/Avatar-1.png" alt="Avatar">
+                            </div>
+                            <div class="avatars-group__item avatar avatar_size_m avatar_is-circular">
+                                <img class="avatar__image" src="./images/Avatar-2.png" alt="Avatar">
+                            </div>
+                            <div class="avatars-group__item avatar avatar_size_m avatar_is-circular">
+                                <img class="avatar__image" src="./images/Avatar-3.png" alt="Avatar">
+                            </div>
+                            <div class="avatars-group__item avatar avatar_size_m avatar_is-circular">
+                                <img class="avatar__image" src="./images/Avatar-4.png" alt="Avatar">
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="font_color-pl">500+</h4>
-                            <p class="font_color-pl font_weight-300">CVs</p>
-                        </div>
-                        <div>
-                            <h4 class="font_color-pl">500+</h4>
-                            <p class="font_color-pl font_weight-300">Employees</p>
-                        </div>
-                        <div>
-                            <h4 class="font_color-pl">100+</h4>
-                            <p class="font_color-pl font_weight-300">Companies</p>
+                        <div class="platform-info__item platform-stats flex">
+                            <div class="platform-stats__item">
+                                <h4 class="text text_heading_4 text_color_primary-light">500+</h4>
+                                <p class="text text_paragraph text_color_primary-light text_font-weight_light">CVs</p>
+                            </div>
+                            <div class="platform-stats__item">
+                                <h4 class="text text_heading_4 text_color_primary-light">500+</h4>
+                                <p class="text text_paragraph text_color_primary-light text_font-weight_light">Employees</p>
+                            </div>
+                            <div class="platform-stats__item">
+                                <h4 class="text text_heading_4 text_color_primary-light">100+</h4>
+                                <p class="text text_paragraph text_color_primary-light text_font-weight_light">Companies</p>
+                            </div>
                         </div>
                     </div>
                 </section>
             </section>
         </div>
     </main>
-    <footer>    
-        <div>
-            <p class="font_color-pl font_weight-300">&#169 2023 Mariyorda</p>
+    <footer class="footer">    
+        <div class="flex flex_justify_between">
+            <p class="text text_paragraph text_color_primary-light text_font-weight_light">&#169 2023 Mariyorda</p>
+            <p class="text text_paragraph text_color_primary-light text_font-weight_light text_align_end">&#33 &#34 &#35 &#36 &#37 &#38 &#39 &#40 &#41 &#42 &#43 &#44 &#91 &#92 &#93 &#94 &#95 &#124 &#125 &#126</p>
         </div>
     </footer>
 </body>

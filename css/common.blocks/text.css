@@ -1,0 +1,88 @@
+.text {
+    font-family: "Barlow";
+}
+
+.text_heading_1 {
+    font-size: var(--font-size-xxxl);
+    margin-bottom: var(--spacing-xxl);
+}
+
+.text_heading_2 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.text_heading_3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-l);
+}
+
+.text_heading_4 {
+    font-size: var(--font-size-l);
+    margin-bottom: var(--spacing-m);
+}
+
+.text_paragraph {
+    font-size: var(--font-size-m);
+    line-height: 1.25;
+}
+
+.text_color_primary-light {
+    color: var(--font-primary-light)
+}
+
+.text_color_primary-dark {
+    color: var(--font-primary-dark)
+}
+
+.text_color_secondary-light {
+    color: var(--font-secondary-light)
+}
+
+.text_color_secondary-dark {
+    color: var(--font-secondary-dark)
+}
+
+.text_font-weight_light {
+    font-weight: var(--font-weight-light);
+}
+
+.text_font-weight_regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.text_font-weight_medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.text_font-weight_bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.text_font-size_s {
+    font-size: var(--font-size-s);
+}
+
+.text_font-size_m {
+    font-size: var(--font-size-m);
+}
+
+.text_font-size_l {
+    font-size: var(--font-size-l);
+}
+
+.text_font-size_xl {
+    font-size: var(--font-size-xl);
+}
+
+.text_font-size_xxl {
+    font-size: var(--font-size-xxl);
+}
+
+.text_font-size_xxxl {
+    font-size: var(--font-size-xxxl);
+}
+
+.text_align_end {
+    text-align: end;
+}

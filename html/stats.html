@@ -5,91 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/shared.css">
-    <link rel="stylesheet" href="../css/stats.css">
+    <link rel="stylesheet" href="../css/pages/stats.css">
 </head>
 <body class="flex flex_column">
-    <header class="flex flex_align-center flex_justify-between">
-        <div class="flex grid-column_6 flex_justify-start flex_align-center header-left">   
-            <h2 class="font_color-sl font_size-xxl font_weight-700 header-title">JobsIT</h2>
-            <nav class="header-navigation">
-                <ul class="flex header-navigation__list">
-                    <li>
-                        <a class="font_color-sd" href="../index.html">Home</a>
+    <header class="header flex flex_align_center flex_justify_between">
+        <div class="header__left flex flex_justify_start flex_align_center">   
+            <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold">JobsIT</h2>
+            <nav class="header__navigation">
+                <ul class="flex">
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a class="font_color-sd" href="./stats.html">Stats</a>
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="./stats.html">Stats</a>
                     </li>
-                    <li>
-                        <a class="font_color-sd" href="./about.html">About us</a>
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="./about.html">About us</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="flex grid-column_6 flex_justify-end header-right">   
-            <button class="button_small button_text font_color-pl">Sign in</button>
-            <button class="button_small button_secondary font_color-sl font_weight-500">Sign up</button>
+        <div class="flex flex_justify_end">   
+            <button class="button button_small button_text text text_color_primary-light text_font-size_l text_font-weight_medium">Sign in</button>
+            <button class="button button_small button_secondary text_color_secondary-light text text_font-size_l text_font-weight_medium">Sign up</button>
         </div>
     </header>
     <main>
-        <div class="main-wrapper"> 
-            <div class="container">
-                <section class="stats">
-                    <h3 class="font_color-pl font_weight-500">Stats</h3>
-                    <table class="stats-table">
-                        <thead>
-                            <tr class="stats-table__row">
-                                <th>Country</th>
-                                <th>Number of companies</th>
-                                <th>Number of employees</th>
-                                <th>Total users</th>
+        <div class="main-wrapper main-wrapper_width_l"> 
+            <div class="container container_py_xxxl flex flex_column flex_gap_xxxl">
+                <section class="paper paper_background-color_dark paper_border-radius_l paper_p_ul flex flex_column flex_gap_xl">
+                    <h3 class="text text_heading_3 text_color_primary-light text_font-weight_medium">Stats</h3>
+                    <table class="table table_is-fullwidth table_is-dark table_is-sticky-header table_spacing_xl table_gap-y_xl table_height_s">
+                        <thead class="table__head">
+                            <tr class="table__row table__row_is-head table__row_cols_4">
+                                <th class="table__col table__col_is-head">Country</th>
+                                <th class="table__col table__col_is-head">Number of companies</th>
+                                <th class="table__col table__col_is-head">Number of employees</th>
+                                <th class="table__col table__col_is-head">Total users</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr class="stats-table__row">
-                                <td>Russia</td>
-                                <td>100</td>
-                                <td>50</td>
-                                <td>150</td>
+                        <tbody class="table__body">
+                            <tr class="table__row table__row_cols_4">
+                                <td class="table__col">Russia</td>
+                                <td class="table__col">100</td>
+                                <td class="table__col">50</td>
+                                <td class="table__col">150</td>
                             </tr>
-                            <tr class="stats-table__row">
-                                <td>Serbia</td>
-                                <td>200</td>
-                                <td>20</td>
-                                <td>220</td>
+                            <tr class="table__row table__row_cols_4">
+                                <td class="table__col">Serbia</td>
+                                <td class="table__col">200</td>
+                                <td class="table__col">20</td>
+                                <td class="table__col">220</td>
                             </tr>
-                            <tr class="stats-table__row">
-                                <td>Finland</td>
-                                <td>200</td>
-                                <td>20</td>
-                                <td>220</td>
+                            <tr class="table__row table__row_cols_4">
+                                <td class="table__col">Finland</td>
+                                <td class="table__col">200</td>
+                                <td class="table__col">20</td>
+                                <td class="table__col">220</td>
                             </tr>
-                            <tr class="stats-table__row">
-                                <td>USA</td>
-                                <td>500</td>
-                                <td>50</td>
-                                <td>550</td>
+                            <tr class="table__row table__row_cols_4">
+                                <td class="table__col">USA</td>
+                                <td class="table__col">500</td>
+                                <td class="table__col">50</td>
+                                <td class="table__col">550</td>
                             </tr>
-                            <tr class="stats-table__row">
-                                <td>France</td>
-                                <td>500</td>
-                                <td>50</td>
-                                <td>550</td>
+                            <tr class="table__row table__row_cols_4">
+                                <td class="table__col">France</td>
+                                <td class="table__col">500</td>
+                                <td class="table__col">50</td>
+                                <td class="table__col">550</td>
                             </tr>
-                            <tr class="stats-table__row">
-                                <td>Ukraine</td>
-                                <td>500</td>
-                                <td>50</td>
-                                <td>550</td>
+                            <tr class="table__row table__row_cols_4">
+                                <td class="table__col">Ukraine</td>
+                                <td class="table__col">500</td>
+                                <td class="table__col">50</td>
+                                <td class="table__col">550</td>
                             </tr>
-                            <tr class="stats-table__row">
-                                <td>Poland</td>
-                                <td>500</td>
-                                <td>50</td>
-                                <td>550</td>
+                            <tr class="table__row table__row_cols_4">
+                                <td class="table__col">Poland</td>
+                                <td class="table__col">500</td>
+                                <td class="table__col">50</td>
+                                <td class="table__col">550</td>
                             </tr>
                         </tbody>
                     </table>
@@ -97,9 +94,9 @@
             </div>
         </div>
     </main>
-    <footer>    
+    <footer class="footer">    
         <div>
-            <p class="font_color-pl font_weight-300">&#169 2023 Mariyorda</p>
+            <p class="text text_paragraph text_color_primary-light text_font-weight_light">&#169 2023 Mariyorda</p>
         </div>
     </footer>
 </body>

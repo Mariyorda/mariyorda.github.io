@@ -1,31 +1,10 @@
-header, footer {
-    background-color: var(--primary-dark);
-    padding: var(--spacing-l);
-}
-
-.header-left > .header-title {
-    margin-bottom: 0;
-}
-
-.header-left > .header-navigation {
-    margin-left: var(--spacing-xl);
-}
-
-.header-right button:first-of-type {
-    margin-right: var(--spacing-m);
-}
-
-.header-navigation {
-    margin-left: var(--spacing-xl);
-}
-
-.header-navigation__list > li:not(:last-of-type) {
-    margin-right: var(--spacing-l);
-}
-
-button {
+.button {
     font-family: "Barlow";
     border-radius: var(--spacing-l);
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 .button_small {
@@ -55,4 +34,3 @@ button {
 .button_text {
     background-color: transparent;
 }
-

@@ -1,0 +1,16 @@
+.header {
+    background-color: var(--primary-dark);
+    padding: var(--spacing-l);
+}
+
+.header .header__title {
+    margin-bottom: 0;
+}
+
+.header .header__navigation {
+    margin-left: var(--spacing-xl);
+}
+
+.header .header__navigation-item:not(:last-of-type) {
+    margin-right: var(--spacing-xl);
+}

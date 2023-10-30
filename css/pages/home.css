@@ -1,0 +1,27 @@
+@import url("../common.blocks/shared.css");
+@import url("../common.blocks/section-header");
+@import url("../common.blocks/job-search/index.css");
+@import url("../common.blocks/code.css");
+@import url("../common.blocks/avatar.css");
+@import url("../common.blocks/platform-info.css");
+@import url("../common.blocks/platform-stats.css");
+@import url("../common.blocks/avatars-group.css");
+
+
+body {
+    background-image: url("../../images/Home-Background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.search-banner {
+    background-color: var(--primary-dark);
+    min-width: 640px;
+    width: 100%;
+    padding: var(--spacing-xxxl);
+    border-radius: var(--spacing-l);
+}
+
+.search-banner .search-banner__section:not(:last-of-type) {
+    margin-bottom: var(--spacing-l);
+}

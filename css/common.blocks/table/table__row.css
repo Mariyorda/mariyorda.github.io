@@ -1,0 +1,9 @@
+.table__row {
+    display: grid;
+    color: var(--font-primary-light);
+    text-align: left;
+}
+
+.table__row_cols_4 {
+    grid-template-columns: repeat(4, 1fr);
+}

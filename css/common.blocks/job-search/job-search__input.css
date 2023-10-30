@@ -1,0 +1,10 @@
+.job-search__input {
+    background-color: var(--primary-light);
+    border-radius: var(--spacing-l);
+    padding: var(--spacing-xl);
+}
+
+.job-search__input::placeholder {
+    font-weight: var(--font-weight-light);
+    color: var(--font-secondary-dark);
+}

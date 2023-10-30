@@ -3,82 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Jobs Search</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/shared.css">
-    <link rel="stylesheet" href="../css/jobs.css">
+    <link rel="stylesheet" href="../css/pages/jobs.css">
 </head>
 <body class="flex flex_column">
-    <header class="flex flex_align-center flex_justify-between">
-        <div class="flex grid-column_6 flex_justify-start flex_align-center header-left">   
-            <h2 class="font_color-sl font_size-xxl font_weight-700 header-title">JobsIT</h2>
-            <nav class="header-navigation">
-                <ul class="flex header-navigation__list">
-                    <li>
-                        <a class="font_color-sd" href="../index.html">Home</a>
+    <header class="header flex flex_align_center flex_justify_between">
+        <div class="header__left flex flex_justify_start flex_align_center">   
+            <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold">JobsIT</h2>
+            <nav class="header__navigation">
+                <ul class="flex">
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a class="font_color-sd" href="./stats.html">Stats</a>
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="./stats.html">Stats</a>
                     </li>
-                    <li>
-                        <a class="font_color-sd" href="./about.html">About us</a>
+                    <li class="header__navigation-item">
+                        <a class="link text text_color_secondary-dark text_font-size_l" href="./about.html">About us</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="flex grid-column_6 flex_justify-end header-right">   
-            <button class="button_small button_text font_color-pl">Sign in</button>
-            <button class="button_small button_secondary font_color-sl font_weight-500">Sign up</button>
+        <div class="flex flex_justify_end">   
+            <button class="button button_small button_text text text_color_primary-light text_font-size_l text_font-weight_medium">Sign in</button>
+            <button class="button button_small button_secondary text_color_secondary-light text text_font-size_l text_font-weight_medium">Sign up</button>
         </div>
     </header>
     <main>  
-        <div class="main-wrapper">
-            <div class="flex flex_column container">
-                <section class="flex flex_align-center search-container">
-                    <form method="get" action="./jobs.html" class="flex flex_justify-center search-form">
-                        <input type="text" name="position" placeholder="Front-end Developer">
-                        <input type="text" name="location" placeholder="Russia, Saint-Petersburg">
-                        <button class="button_large button_primary font_color-pl font_size-l">Search</button>
+        <div class="main-wrapper main-wrapper_width_xl">
+            <div class="container container_py_xxxl flex flex_column flex_gap_xxxl">
+                <section class="job-search job-search_small flex">
+                    <form method="get" action="./html/jobs.html" class="job-search__form flex">
+                        <input class="job-search__input" type="text" name="position" placeholder="Front-end Developer">
+                        <input class="job-search__input" type="text" name="location" placeholder="Russia, Saint-Petersburg">
+                        <button class="button button_large button_primary text text_color_primary-light text_font-size_l">Search</button>
                     </form>
-                    <button>Save search</button>
                 </section>
-                <h4 class="font_color-pl font_size-m">Number of found jobs:</h4>
-                <div class="flex">
-                    <aside class="job-filters">
+                <h4 class="text text_heading_4 text_color_primary-light text_font-size_m">Number of found jobs:</h4>
+                <div class="flex flex_gap_xxxl">
+                    <aside class="job-filters paper paper_p_ul paper_border-radius_l paper_background-color_main flex flex_grow_1">
                     </aside>
-                    <section class="jobs-container">
-                        <div class="grid-row">
-                            <article class="grid-column-6">
-                                <div></div>
+                    <section class="jobs-container paper paper_p_ul paper_border-radius_l paper_background-color_main flex_grow_4">
+                        <article class="job-card">
+                            <div class="job-card__logo-section"></div>
+                            <div class="job-card__content-section flex flex_column flex_gap_xl">
                                 <div>
-                                    <div>
-                                        <p>Company Name</p>
-                                        <p>Address</p>
-                                    </div>
-                                    <div>
-                                        <h4>Vacancy Name</h4>
-                                        <p>Exp Level</p>
-                                        <p>Salary/Salary Range</p>
-                                    </div>
-                                    <div>
-                                        <p>Work Schedule</p>
-                                        <p>Work Location</p>
-                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_l text_font-weight_medium">Company Name</p>
+                                    <p class="text text_paragraph text_color_secondary-dark text_font-size_s text_font-weight_light">Address</p>
                                 </div>
-                                <div></div>
-                            </article>
-                        </div>
+                                <div class="flex flex_column flex_gap_xl">
+                                    <div>
+                                        <h4 class="text text_heading_4 text_color_secondary-light">Vacancy Name</h4>
+                                        <p class="text text_paragraph text_color_secondary-light">Exp Level</p>
+                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light">Salary/Salary Range</p>
+                                </div>
+                                <div class="flex flex_gap_xl">
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Schedule</p>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Location</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="job-card">
+                            <div class="job-card__logo-section"></div>
+                            <div class="job-card__content-section flex flex_column flex_gap_xl">
+                                <div>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_l text_font-weight_medium">Company Name</p>
+                                    <p class="text text_paragraph text_color_secondary-dark text_font-size_s text_font-weight_light">Address</p>
+                                </div>
+                                <div class="flex flex_column flex_gap_xl">
+                                    <div>
+                                        <h4 class="text text_heading_4 text_color_secondary-light">Vacancy Name</h4>
+                                        <p class="text text_paragraph text_color_secondary-light">Exp Level</p>
+                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light">Salary/Salary Range</p>
+                                </div>
+                                <div class="flex flex_gap_xl">
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Schedule</p>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Location</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="job-card">
+                            <div class="job-card__logo-section"></div>
+                            <div class="job-card__content-section flex flex_column flex_gap_xl">
+                                <div>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_l text_font-weight_medium">Company Name</p>
+                                    <p class="text text_paragraph text_color_secondary-dark text_font-size_s text_font-weight_light">Address</p>
+                                </div>
+                                <div class="flex flex_column flex_gap_xl">
+                                    <div>
+                                        <h4 class="text text_heading_4 text_color_secondary-light">Vacancy Name</h4>
+                                        <p class="text text_paragraph text_color_secondary-light">Exp Level</p>
+                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light">Salary/Salary Range</p>
+                                </div>
+                                <div class="flex flex_gap_xl">
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Schedule</p>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Location</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="job-card">
+                            <div class="job-card__logo-section"></div>
+                            <div class="job-card__content-section flex flex_column flex_gap_xl">
+                                <div>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_l text_font-weight_medium">Company Name</p>
+                                    <p class="text text_paragraph text_color_secondary-dark text_font-size_s text_font-weight_light">Address</p>
+                                </div>
+                                <div class="flex flex_column flex_gap_xl">
+                                    <div>
+                                        <h4 class="text text_heading_4 text_color_secondary-light">Vacancy Name</h4>
+                                        <p class="text text_paragraph text_color_secondary-light">Exp Level</p>
+                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light">Salary/Salary Range</p>
+                                </div>
+                                <div class="flex flex_gap_xl">
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Schedule</p>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Location</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="job-card">
+                            <div class="job-card__logo-section"></div>
+                            <div class="job-card__content-section flex flex_column flex_gap_xl">
+                                <div>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_l text_font-weight_medium">Company Name</p>
+                                    <p class="text text_paragraph text_color_secondary-dark text_font-size_s text_font-weight_light">Address</p>
+                                </div>
+                                <div class="flex flex_column flex_gap_xl">
+                                    <div>
+                                        <h4 class="text text_heading_4 text_color_secondary-light">Vacancy Name</h4>
+                                        <p class="text text_paragraph text_color_secondary-light">Exp Level</p>
+                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light">Salary/Salary Range</p>
+                                </div>
+                                <div class="flex flex_gap_xl">
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Schedule</p>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Location</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="job-card">
+                            <div class="job-card__logo-section"></div>
+                            <div class="job-card__content-section flex flex_column flex_gap_xl">
+                                <div>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_l text_font-weight_medium">Company Name</p>
+                                    <p class="text text_paragraph text_color_secondary-dark text_font-size_s text_font-weight_light">Address</p>
+                                </div>
+                                <div class="flex flex_column flex_gap_xl">
+                                    <div>
+                                        <h4 class="text text_heading_4 text_color_secondary-light">Vacancy Name</h4>
+                                        <p class="text text_paragraph text_color_secondary-light">Exp Level</p>
+                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light">Salary/Salary Range</p>
+                                </div>
+                                <div class="flex flex_gap_xl">
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Schedule</p>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Location</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="job-card">
+                            <div class="job-card__logo-section"></div>
+                            <div class="job-card__content-section flex flex_column flex_gap_xl">
+                                <div>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_l text_font-weight_medium">Company Name</p>
+                                    <p class="text text_paragraph text_color_secondary-dark text_font-size_s text_font-weight_light">Address</p>
+                                </div>
+                                <div class="flex flex_column flex_gap_xl">
+                                    <div>
+                                        <h4 class="text text_heading_4 text_color_secondary-light">Vacancy Name</h4>
+                                        <p class="text text_paragraph text_color_secondary-light">Exp Level</p>
+                                    </div>
+                                    <p class="text text_paragraph text_color_primary-light">Salary/Salary Range</p>
+                                </div>
+                                <div class="flex flex_gap_xl">
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Schedule</p>
+                                    <p class="text text_paragraph text_color_primary-light text_font-size_s">Work Location</p>
+                                </div>
+                            </div>
+                        </article>
                     </section>
                 </div>
             </div>
         </div>
     </main>
-    <footer>    
+    <footer class="footer">    
         <div>
-            <p class="font_color-pl font_weight-300">&#169 2023 Mariyorda</p>
+            <p class="text text_paragraph text_color_primary-light text_font-weight_light">&#169 2023 Mariyorda</p>
         </div>
     </footer>
 </body>

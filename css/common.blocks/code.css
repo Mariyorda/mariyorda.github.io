@@ -1,0 +1,23 @@
+.code {
+    font-family: "JetBrainsMono";   
+}
+
+.code_background-color_dark {
+    background-color: var(--secondary-dark);
+}
+
+.code_color_light {
+    color: var(--font-primary-light);
+}
+
+.code_font-size_m {
+    font-size: var(--font-size-m);
+}   
+
+.code_p_l {
+    padding: var(--spacing-l);
+}
+
+.code_border-radius_l {
+    border-radius: var(--spacing-l);
+}
