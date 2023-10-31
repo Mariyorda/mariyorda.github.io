@@ -6,13 +6,13 @@
     background-color: var(--secondary-dark);
 }
 
+.code_background-color_main {
+    background-color: var(--primary-main);
+}
+
 .code_color_light {
     color: var(--font-primary-light);
 }
-
-.code_font-size_m {
-    font-size: var(--font-size-m);
-}   
 
 .code_p_l {
     padding: var(--spacing-l);

@@ -86,3 +86,31 @@
 .text_align_end {
     text-align: end;
 }
+
+.text_is-underlined {
+    text-decoration-line: underline;
+}
+
+.text_is-crossed-out {
+    text-decoration-line: line-through;
+}
+
+.text_is-overlined {
+    text-decoration-line: overline;
+}
+
+.text_white-space_pre-line {
+    white-space: pre-line;
+}
+
+.text_letter-spacing_s {
+    letter-spacing: var(--spacing-s);
+}
+
+.text_tranform_capitalize {
+    text-transform: capitalize;
+}
+
+.text_indent_xl {
+    text-indent: var(--spacing-xl);
+}

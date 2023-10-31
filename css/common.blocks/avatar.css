@@ -2,6 +2,11 @@
     display: inline-block;   
 }
 
+.avatar_size_s {
+    width: 48px;
+    height: 48px;
+}
+
 .avatar_size_m {
     width: 64px;
     height: 64px;
@@ -19,4 +24,8 @@
 
 .avatar_is-circular .avatar__image {
     border-radius: 100%;
+}
+
+.avatar_is-dropping-shadow_light {
+    filter: drop-shadow(5px 5px 8px var(--secondary-light));
 }

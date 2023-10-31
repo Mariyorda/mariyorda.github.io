@@ -2,6 +2,7 @@
 @import url("../common.blocks/container.css");
 @import url("../common.blocks/paper.css");
 @import url("../common.blocks/job-search/index.css");
+@import url("../common.blocks/avatar.css");
 
 .job-filters {
     flex-basis: 250px;
@@ -19,6 +20,13 @@
 .job-card__logo-section {
     width: 64px;
     padding: var(--spacing-l);
+    position: relative;
+}
+
+.job-card__logo-section .avatar {
+    position: absolute;
+    top: var(--spacing-l);
+    left: var(--spacing-l);
 }
 
 .job-card__content-section {

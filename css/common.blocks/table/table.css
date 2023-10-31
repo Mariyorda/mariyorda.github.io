@@ -23,7 +23,7 @@
     padding: var(--spacing-xl);
 }
 
-.table_is-sticky-header .table__col_is-head {
+.table_is-sticky-header .table__head {
     position: sticky;
     top: 0;
 }

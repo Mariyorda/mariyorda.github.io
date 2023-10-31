@@ -30,6 +30,10 @@
     align-items: center;
 }
 
+.flex_align_end {
+    align-items: flex-end;
+}
+
 .flex_justify_start {
     justify-content: flex-start;
 }
