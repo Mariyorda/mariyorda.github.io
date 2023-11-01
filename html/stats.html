@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/pages/stats.css">
+    <script src="../js/script.js"></script>
 </head>
 <body class="flex flex_column">
-    <header class="header flex flex_align_center flex_justify_between">
-        <div class="header__left flex flex_justify_start flex_align_center">   
-            <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold">JobsIT</h2>
+    <header class="header flex flex_align_center flex_justify_between flex_column_bp_s flex_gap_l_bp_s">
+        <div class="header__left flex flex_justify_start flex_align_center flex_column_bp_xs flex_gap_l_bp_xs">   
+            <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold"><strong>JobsIT</strong></h2>
             <nav class="header__navigation">
                 <ul class="flex">
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="../index.html">Home</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="../index.html">Home</a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="./stats.html">Stats</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="./stats.html">Stats</a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="./about.html">About us</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="./about.html">About us</a>
                     </li>
                 </ul>
             </nav>
@@ -34,9 +35,9 @@
         </div>
     </header>
     <main>
-        <div class="main-wrapper main-wrapper_width_l"> 
+        <div class="main-wrapper main-wrapper_width_l">  
             <div class="container container_py_xxxl flex flex_column flex_gap_xxxl">
-                <section class="paper paper_background-color_dark paper_border-radius_l paper_p_ul flex flex_column flex_gap_xl">
+                <section class="paper paper_background-color_dark paper_border-radius_l paper_p_ul paper_background-color_transparent_bp_s flex flex_column flex_gap_xl">
                     <h3 class="text text_heading_3 text_color_primary-light text_font-weight_medium">Stats</h3>
                     <table class="table table_is-fullwidth table_is-dark table_is-sticky-header table_spacing_xl table_gap-y_xl table_height_s">
                         <thead class="table__head">
@@ -97,8 +98,9 @@
         </div>
     </main>
     <footer class="footer">    
-        <div>
+        <div class="flex flex_justify_between flex_column_bp_s">
             <p class="text text_paragraph text_color_primary-light text_font-weight_light">&#169 2023 Mariyorda</p>
+            <p class="footer__load-time text text_paragraph text_color_primary-light text_font-weight_light"></p>
         </div>
     </footer>
 </body>

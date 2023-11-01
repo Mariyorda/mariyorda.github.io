@@ -40,3 +40,32 @@
 .table_gap-y_xl .table__row_is-head {
     margin-bottom: var(--spacing-l);
 }
+
+
+@media screen and (max-width: 1024px) {
+    .table_height_s {
+        max-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table_height_s {
+        max-height: 60vh;
+    }
+
+    .table {
+        font-size: var(--font-size-s);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table {
+        font-size: var(--font-size-s);
+    }
+
+    .table .table__col {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

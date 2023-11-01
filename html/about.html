@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/pages/about.css">
+    <script src="../js/script.js"></script>
 </head>
 <body class="flex flex_column">
-    <header class="header flex flex_align_center flex_justify_between">
-        <div class="header__left flex flex_justify_start flex_align_center">   
-            <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold">JobsIT</h2>
+    <header class="header flex flex_align_center flex_justify_between flex_column_bp_s flex_gap_l_bp_s">
+        <div class="header__left flex flex_justify_start flex_align_center flex_column_bp_xs flex_gap_l_bp_xs">   
+            <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold"><strong>JobsIT</strong></h2>
             <nav class="header__navigation">
                 <ul class="flex">
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="../index.html">Home</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="../index.html">Home</a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="./stats.html">Stats</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="./stats.html">Stats</a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="./about.html">About us</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="./about.html">About us</a>
                     </li>
                 </ul>
             </nav>
@@ -34,21 +35,21 @@
         </div>
     </header>
     <main>
-        <div class="main-wrapper main-wrapper_width_l">
-            <div class="container container_py_xxxl flex flex_gap_xxxl">
+        <div class="main-wrapper main-wrapper_width_l flex flex_align_center flex_justify_center">  
+            <div class="container container_py_xxxl container_px_xxxl flex flex_gap_xxxl flex_column_bp_m flex_gap_xxl_bp_m">
                 <section class="paper paper_background-color_dark paper_border-radius_l paper_p_ul flex flex_column flex_gap_ul">
                     <section class="flex flex_column flex_gap_xxxl">
                         <h3 class="text text_heading_3 text_color_primary-light text_font-weight_medium">About Us</h3>
                         <p class="text text_paragraph text_color_primary-light text_white-space_pre-line text_indent_xl">JobsIT - But <i>I</i> must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
-                            
+
                             Nor again is there anyone who loves or pursues or desires to <em>obtain pain of itself, because it is pain,</em> but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
-                        <blockquote class="quotation quotation__quote-color_light flex flex_column flex_align_end">
+                        <blockquote class="quotation quotation__quote-color_light quotation_align_end">
                             <div class="quotation__text">The future depends on what you do today!</div>
                             <cite class="quotation__author">&mdash;Mahatma Gandhi</cite>
                         </blockquote>
                     </section>   
                     <section class="search-banner__section flex flex_justify_center flex_align_center">
-                        <div class="platform-info search-banner__stats flex flex_justify_between flex_align_center">  
+                        <div class="platform-info search-banner__stats flex flex_justify_between flex_align_center flex_column_bp_s flex_gap_xxl_bp_s">  
                             <div class="platform-info__item avatars-group">
                                 <div class="avatars-group__item avatar avatar_size_m avatar_is-circular">
                                     <img class="avatar__image" src="../images/Avatar-1.webp" alt="Avatar">
@@ -80,7 +81,7 @@
                         </div>
                     </section>
                     <section class="flex flex_justify_center">
-                        <p class="formula code code_background-color_main code_p_l code_border-radius_l text text_color_primary-light text_font-weight_light text_font-size_s"><span class="text_is-crossed-out">Success</span> &#61; (Passion<sup>2</sup> &#43; Hard Work<sup>2</sup>) &#215; Continuous Learning<sup>2</sup></p>
+                        <p class="text text_align_center formula code code_background-color_main code_p_l code_border-radius_l text text_color_primary-light text_font-weight_light text_font-size_s"># <span class="text_is-crossed-out">Success</span> &#61; (Passion<sup>2</sup> &#43; Hard Work<sup>2</sup>) &#215; Continuous Learning<sup>2</sup></p>
                     </section>
                 </section>
                 <section class="paper paper_background-color_dark paper_border-radius_l paper_p_ul flex flex_column flex_gap_xl">
@@ -103,8 +104,9 @@
         </div>
     </main>
     <footer class="footer">    
-        <div>
+        <div class="flex flex_justify_between flex_column_bp_s">
             <p class="text text_paragraph text_color_primary-light text_font-weight_light">&#169 2023 Mariyorda</p>
+            <p class="footer__load-time text text_paragraph text_color_primary-light text_font-weight_light"></p>
         </div>
     </footer>
 </body>

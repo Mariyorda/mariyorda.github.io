@@ -83,6 +83,10 @@
     font-size: var(--font-size-xxxl);
 }
 
+.text_align_center {
+    text-align: center;
+}
+
 .text_align_end {
     text-align: end;
 }
@@ -113,4 +117,8 @@
 
 .text_indent_xl {
     text-indent: var(--spacing-xl);
+}
+
+.text_direction_rtl {
+    direction: rtl;
 }

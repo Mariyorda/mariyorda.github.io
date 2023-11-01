@@ -6,10 +6,20 @@
     background-color: var(--primary-main);
 }
 
+.paper_background-color_transparent {
+    background-color: transparent;
+}
+
 .paper_border-radius_l {
     border-radius: var(--spacing-l);
 }
 
 .paper_p_ul {
     padding: var(--spacing-ul);
+}
+
+@media screen and (max-width: 768px) {
+    .paper_background-color_transparent_bp_s {
+        background-color: transparent;
+    }
 }

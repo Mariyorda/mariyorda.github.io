@@ -2,3 +2,13 @@
     padding-top: var(--spacing-xxxl);
     padding-bottom: var(--spacing-xxxl);
 }
+
+.container_px_l {
+    padding-left: var(--spacing-l);
+    padding-right: var(--spacing-l);
+}
+
+.container_px_xxxl {
+    padding-left: var(--spacing-xxxl);
+    padding-right: var(--spacing-xxxl);
+}

@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/pages/home.css">
+    <script src="./js/script.js"></script>
 </head>
 <body class="flex flex_column">
-    <header class="header flex flex_align_center flex_justify_between">
-        <div class="header__left flex flex_justify_start flex_align_center">   
+    <header class="header flex flex_align_center flex_justify_between flex_column_bp_s flex_gap_l_bp_s">
+        <div class="header__left flex flex_justify_start flex_align_center flex_column_bp_xs flex_gap_l_bp_xs">   
             <h2 class="header__title text text_heading_2 text_color_secondary-light text_font-size_xxl text_font-weight_bold"><strong>JobsIT</strong></h2>
             <nav class="header__navigation">
                 <ul class="flex">
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="./index.html">Home</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="./index.html">Home</a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="./html/stats.html">Stats</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="./html/stats.html">Stats</a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="link text text_color_secondary-dark text_font-size_l" href="./html/about.html">About us</a>
+                        <a class="link header__navigation-link text text_color_secondary-dark text_font-size_l" href="./html/about.html">About us</a>
                     </li>
                 </ul>
             </nav>
@@ -35,20 +36,20 @@
     </header>
     <main class="flex flex_column flex_justify_center">  
         <div class="main-wrapper main-wrapper_width_m flex flex_align_center flex_justify_center">  
-            <section class="search-banner flex flex_column">  
+            <section class="search-banner flex flex_column flex_gap_xxl_bp_s">  
                 <section class="search-banner__section flex flex_column flex_align_center">
-                    <h1 class="text text_heading_1 text_color_primary-light text_font-size_xxxl text_font-weight_medium text_letter-spacing_s text_tranform_capitalize">Find your dream job!</h1>
-                    <pre class="code code_background-color_dark code_color_light code_p_l code_border-radius_l"># <b>Dream</b> jobs just like you've been <del>dreaming</del> <ins>jobbing</ins> about!</pre>
+                    <h1 class="text text_heading_1 text_align_center text_color_primary-light text_font-size_xxxl text_font-weight_medium text_letter-spacing_s text_tranform_capitalize">Find your dream job!</h1>
+                    <code class="text text_align_center code code_background-color_dark code_color_light code_p_l code_border-radius_l"># <b>Dream</b> jobs just like you've been <del>dreaming</del> <ins>jobbing</ins> about!</code>
                 </section>
                 <section class="search-banner__section job-search job-search_large flex flex_justify_center flex_align_center">
-                    <form method="get" action="./html/jobs.html" class="job-search__form flex flex_justify_center">
+                    <form method="get" action="./html/jobs.html" class="job-search__form flex flex_justify_center flex_column_bp_s flex_gap_l_bp_s">
                         <input class="job-search__input" type="text" name="position" placeholder="Front-end Developer">
                         <input class="job-search__input" type="text" name="location" placeholder="Russia, Saint-Petersburg">
                         <button class="button button_large button_primary text text_color_primary-light text_font-size_l">Search</button>
                     </form>
                 </section>
                 <section class="search-banner__section flex flex_justify_center flex_align_center">
-                    <div class="platform-info search-banner__stats flex flex_justify_between flex_align_center">  
+                    <div class="platform-info search-banner__stats flex flex_justify_between flex_align_center flex_column_bp_s flex_gap_xxl_bp_s">  
                         <div class="platform-info__item avatars-group">
                             <div class="avatars-group__item avatar avatar_size_m avatar_is-circular">
                                 <img class="avatar__image" src="./images/Avatar-1.webp" alt="Avatar">
@@ -83,9 +84,10 @@
         </div>
     </main>
     <footer class="footer">    
-        <div class="flex flex_justify_between">
+        <div class="flex flex_justify_between flex_column_bp_s">
             <p class="text text_paragraph text_color_primary-light text_font-weight_light">&#169 2023 Mariyorda</p>
-            <p class="text text_paragraph text_color_primary-light text_font-weight_light text_align_end">&#33; &#34; &#35; &#36; &#37; &#38; &#39; &#40; &#41; &#42; &#43; &#44; &#91; &#92; &#93; &#94; &#95; &#124; &#125; &#126;</p>
+            <p class="text text_paragraph text_color_primary-light text_font-weight_light text_direction_rtl">&#33; &#34; &#35; &#36; &#37; &#38; &#39; &#40; &#41; &#42; &#43; &#44; &#91; &#92; &#93; &#94; &#95; &#124; &#125; &#126;</p>
+            <p class="footer__load-time text text_paragraph text_color_primary-light text_font-weight_light"></p>
         </div>
     </footer>
 </body>

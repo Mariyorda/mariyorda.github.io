@@ -27,5 +27,5 @@
 }
 
 .avatar_is-dropping-shadow_light {
-    filter: drop-shadow(5px 5px 8px var(--secondary-light));
+    box-shadow: 6px 5px 8px var(--secondary-light);
 }

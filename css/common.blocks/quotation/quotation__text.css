@@ -20,3 +20,17 @@
     color: var(--secondary-light);
     vertical-align: sub;
 }
+
+@media screen and (max-width: 480px) {
+    .quotation__text {
+        font-size: var(--font-size-l);
+    }
+
+    .quotation__text::before {
+        font-size: var(--font-size-xl);
+    }
+
+    .quotation__text::after {
+        font-size: var(--font-size-xl);
+    }
+}

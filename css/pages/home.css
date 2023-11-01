@@ -1,5 +1,4 @@
 @import url("../common.blocks/shared.css");
-@import url("../common.blocks/section-header");
 @import url("../common.blocks/job-search/index.css");
 @import url("../common.blocks/code.css");
 @import url("../common.blocks/avatar.css");
@@ -16,7 +15,6 @@ body {
 
 .search-banner {
     background-color: var(--primary-dark);
-    min-width: 640px;
     width: 100%;
     padding: var(--spacing-xxxl);
     border-radius: var(--spacing-l);
@@ -24,4 +22,14 @@ body {
 
 .search-banner .search-banner__section:not(:last-of-type) {
     margin-bottom: var(--spacing-l);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+
+    .search-banner {
+        background-color: transparent;
+    }
 }

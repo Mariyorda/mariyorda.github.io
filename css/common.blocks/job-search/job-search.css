@@ -15,3 +15,25 @@
     width: 20%;
     margin-right: var(--spacing-xl)
 }
+
+@media screen and (max-width: 1200px) {
+    .job-search_small .job-search__input {
+        width: 40%;
+        margin-right: var(--spacing-xl)
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .job-search_small .job-search__input {
+        width: 100%;
+        margin-right: var(--spacing-xl)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .job-search_large .job-search__input,
+    .job-search_small .job-search__input {
+        width: 100%;
+        margin-right: 0;
+    }
+}

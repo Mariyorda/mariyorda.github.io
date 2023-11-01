@@ -4,13 +4,25 @@
 }
 
 .main-wrapper_width_m {
-    width: var(--content-width-m);
+    width: 80%;
+    max-width: var(--content-width-m);
 }
 
 .main-wrapper_width_l {
-    width: var(--content-width-l);
+    width: 80%;
+    max-width: var(--content-width-l);
 }
 
 .main-wrapper_width_xl {
-    width: var(--content-width-xl);
+    width: 80%;
+    max-width: var(--content-width-xl);
+}
+
+@media screen and (max-width: 768px) {
+    .main-wrapper_width_m, 
+    .main-wrapper_width_l, 
+    .main-wrapper_width_xl {
+        width: 100%;
+        max-width: none;
+    }
 }

@@ -1,0 +1,11 @@
+.header__navigation-link {
+    transition: color 0.2s ease-in-out;
+}
+
+.header__navigation-link:hover {
+    color: var(--font-primary-light);
+}
+
+.header__navigation-link_is-active {
+    color: var(--font-secondary-light);
+}
