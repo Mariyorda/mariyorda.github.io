@@ -6,6 +6,6 @@
     color: var(--font-primary-light);
 }
 
-.header__navigation-link_is-active {
+.header__navigation-link_active {
     color: var(--font-secondary-light);
 }
