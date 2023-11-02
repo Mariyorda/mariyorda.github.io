@@ -2,7 +2,8 @@
     background-color: var(--primary-light);
     border-radius: var(--spacing-l);
     padding: var(--spacing-xl);
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .job-search__input::placeholder {
@@ -10,7 +11,4 @@
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-light);
     color: var(--font-secondary-dark);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
 }

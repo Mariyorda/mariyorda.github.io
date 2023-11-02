@@ -103,6 +103,10 @@
         gap: var(--spacing-l);
     }
 
+    .flex_gap_xl_bp_s {
+        gap: var(--spacing-xl);
+    }
+
     .flex_gap_xxl_bp_s {
         gap: var(--spacing-xxl);
     }
