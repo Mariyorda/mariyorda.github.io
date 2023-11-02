@@ -1,6 +1,9 @@
 .header {
     background-color: var(--primary-dark);
     padding: var(--spacing-l);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .header .header__title {

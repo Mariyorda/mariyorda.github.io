@@ -1,4 +1,6 @@
 .footer {
     background-color: var(--primary-dark);
     padding: var(--spacing-xl);
+    position: sticky;
+    bottom: 0;
 }
