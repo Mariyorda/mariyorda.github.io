@@ -1,6 +1,5 @@
 .quotation__author {
     font-family: "Barlow";
     color: var(--font-secondary-dark);
-    font-size: var(--font-size-m);
     font-weight: var(--font-weight-light);
 }

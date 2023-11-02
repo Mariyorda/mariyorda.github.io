@@ -12,7 +12,7 @@
     height: 64px;
 }
 
-.avatar_is-circular {
+.avatar_circular {
     border-radius: 100%;
 }
 
@@ -22,10 +22,22 @@
     object-fit: cover;
 }
 
-.avatar_is-circular .avatar__image {
+.avatar_circular .avatar__image {
     border-radius: 100%;
 }
 
-.avatar_is-dropping-shadow_light {
+.avatar_shadow_light {
     box-shadow: 6px 5px 8px var(--secondary-light);
+}
+
+@media screen and (min-width: 2160px) {
+    .avatar_size_s {
+        width: calc(48px * 1.75);
+        height: calc(48px * 1.75);
+    }
+
+    .avatar_size_m {
+        width: calc(64px * 1.75);
+        height: calc(64px * 1.75);
+    }
 }

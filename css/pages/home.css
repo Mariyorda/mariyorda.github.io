@@ -16,12 +16,8 @@ body {
 .search-banner {
     background-color: var(--primary-dark);
     width: 100%;
-    padding: var(--spacing-xxxl);
+    padding: var(--spacing-ul);
     border-radius: var(--spacing-l);
-}
-
-.search-banner .search-banner__section:not(:last-of-type) {
-    margin-bottom: var(--spacing-l);
 }
 
 @media screen and (max-width: 768px) {

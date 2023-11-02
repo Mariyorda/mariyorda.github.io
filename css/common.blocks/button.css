@@ -12,11 +12,11 @@
 }
 
 .button_medium {
-    padding: var(--spacing-m) var(--spacing-l);
+    padding: var(--spacing-l) var(--spacing-l);
 }
 
 .button_large {
-    padding: var(--spacing-m) var(--spacing-xxl);
+    padding: var(--spacing-l) var(--spacing-xxl);
 }
 
 .button_primary {

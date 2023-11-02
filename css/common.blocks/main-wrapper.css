@@ -18,6 +18,23 @@
     max-width: var(--content-width-xl);
 }
 
+@media screen and (min-width: 2160px) {
+    .main-wrapper_width_m {
+        width: 80%;
+        max-width: calc(var(--content-width-m) * 1.75);
+    }
+
+    .main-wrapper_width_l {
+        width: 80%;
+        max-width: calc(var(--content-width-l) * 1.75);
+    }
+
+    .main-wrapper_width_xl {
+        width: 80%;
+        max-width: calc(var(--content-width-xl) * 1.75);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-wrapper_width_m, 
     .main-wrapper_width_l, 

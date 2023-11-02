@@ -8,7 +8,7 @@
 
 .job-search_large .job-search__input {
     width: 35%;
-    margin-right: var(--spacing-xl)
+    margin-right: var(--spacing-xl);
 }
 
 .job-search_small .job-search__input {
@@ -31,9 +31,19 @@
 }
 
 @media screen and (max-width: 768px) {
-    .job-search_large .job-search__input,
-    .job-search_small .job-search__input {
+    .job-search_small .job-search__input,
+    .job-search_large .job-search__input {
         width: 100%;
         margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 2160px) {
+    .job-search_small .job-search__input {
+        width: 25%;
+    }
+
+    .job-search_large .job-search__input {
+        width: 40%;
     }
 }

@@ -23,7 +23,6 @@
 }
 
 .text_paragraph {
-    font-size: var(--font-size-m);
     line-height: 1.25;
 }
 
@@ -63,10 +62,6 @@
     font-size: var(--font-size-s);
 }
 
-.text_font-size_m {
-    font-size: var(--font-size-m);
-}
-
 .text_font-size_l {
     font-size: var(--font-size-l);
 }
@@ -91,15 +86,15 @@
     text-align: end;
 }
 
-.text_is-underlined {
+.text_underlined {
     text-decoration-line: underline;
 }
 
-.text_is-crossed-out {
+.text_crossed-out {
     text-decoration-line: line-through;
 }
 
-.text_is-overlined {
+.text_overlined {
     text-decoration-line: overline;
 }
 

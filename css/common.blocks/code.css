@@ -2,11 +2,11 @@
     font-family: "JetBrainsMono";   
 }
 
-.code_background-color_dark {
+.code_bg-color_dark {
     background-color: var(--secondary-dark);
 }
 
-.code_background-color_main {
+.code_bg-color_main {
     background-color: var(--primary-main);
 }
 

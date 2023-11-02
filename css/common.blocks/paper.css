@@ -1,12 +1,12 @@
-.paper_background-color_dark {
+.paper_bg-color_dark {
     background-color: var(--secondary-dark);
 }
 
-.paper_background-color_main {
+.paper_bg-color_main {
     background-color: var(--primary-main);
 }
 
-.paper_background-color_transparent {
+.paper_bg-color_transparent {
     background-color: transparent;
 }
 
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .paper_background-color_transparent_bp_s {
+    .paper_bg-color_transparent_bp_s {
         background-color: transparent;
     }
 }
