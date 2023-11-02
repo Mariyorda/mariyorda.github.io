@@ -1,7 +1,7 @@
 .job-search__input {
     background-color: var(--primary-light);
     border-radius: var(--spacing-l);
-    padding: 0 var(--spacing-xl);
+    padding: var(--spacing-xl);
     position: relative;
 }
 
