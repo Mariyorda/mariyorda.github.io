@@ -1,7 +1,3 @@
-.text {
-    font-family: "Barlow";
-}
-
 .text_heading_1 {
     font-size: var(--font-size-xxxl);
     margin-bottom: var(--spacing-xxl);

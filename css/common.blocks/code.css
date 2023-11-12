@@ -1,5 +1,5 @@
 .code {
-    font-family: "JetBrainsMono";   
+    font-family: var(--font-family-code);   
 }
 
 .code_bg-color_dark {

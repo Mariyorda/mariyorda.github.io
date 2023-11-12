@@ -1,5 +1,6 @@
 .button {
-    font-family: "Barlow";
+    display: block;
+    font-family: var(--font-family-main);
     border-radius: var(--spacing-l);
 }
 
