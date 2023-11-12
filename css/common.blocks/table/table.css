@@ -1,8 +1,17 @@
 .table {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     overflow: auto;
     border-radius: var(--spacing-l);
+    grid-template-columns: 1fr;
+}
+
+.table_cols_4 .table__row {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.table .table__body, .table .table__head {
+    display: grid;
+    grid-template-columns: subgrid;
 }
 
 .table_dark .table__row_head {

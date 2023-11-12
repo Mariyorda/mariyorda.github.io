@@ -1,3 +1,7 @@
+.table__col {
+    overflow-x: hidden;
+}
+
 .table__col_head {
     font-weight: var(--font-weight-medium);
 }
