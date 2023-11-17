@@ -1,3 +1,8 @@
+.container_py_m {
+    padding-top: var(--spacing-m);
+    padding-bottom: var(--spacing-m);
+}
+
 .container_py_xxxl {
     padding-top: var(--spacing-xxxl);
     padding-bottom: var(--spacing-xxxl);

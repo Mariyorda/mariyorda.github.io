@@ -50,6 +50,14 @@
     justify-content: space-between;
 }
 
+.flex_gap_m {
+    gap: var(--spacing-m);
+}
+
+.flex_gap_l {
+    gap: var(--spacing-l);
+}
+
 .flex_gap_xl {
     gap: var(--spacing-xl);
 }

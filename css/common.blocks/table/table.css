@@ -5,6 +5,18 @@
     grid-template-columns: 1fr;
 }
 
+.table_cols_1 .table__row {
+    grid-template-columns: 1fr;
+}
+
+.table_cols_2 .table__row {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.table_cols_3 .table__row {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .table_cols_4 .table__row {
     grid-template-columns: repeat(4, 1fr);
 }

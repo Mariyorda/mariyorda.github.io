@@ -113,3 +113,7 @@
 .text_direction_rtl {
     direction: rtl;
 }
+
+.text_mb_m {
+    margin-bottom: var(--spacing-m);
+}

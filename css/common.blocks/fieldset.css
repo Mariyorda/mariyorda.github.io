@@ -1,0 +1,5 @@
+.fieldset {
+    border-radius: var(--spacing-l);
+    border-color: var(--light-grey);
+    border-style: solid;
+}

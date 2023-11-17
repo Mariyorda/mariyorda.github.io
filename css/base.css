@@ -20,6 +20,8 @@
     --font-secondary-light: #FF6600;
     --font-secondary-dark: #787777;
 
+    --font-error: #FF4646;
+
     --content-width-m: 960px;
     --content-width-l: 1240px;
     --content-width-xl: 1400px;
