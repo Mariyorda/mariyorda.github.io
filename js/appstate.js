@@ -1,6 +1,17 @@
 const __APP_STATE__ = {
     statsTableData: [],
     statsTableAvaliableCountries: [],
+    statsTableFilters: null,
+
+    setStatsTableFilters(filters) {
+      this.statsTableFilters = filters;
+      localStorage.setItem("statsTableFilters", JSON.stringify(filters));
+    },
+
+    getStatsTableFilters() {
+      this.statsTableFilters = JSON.parse(localStorage.getItem("statsTableFilters"));
+      return this.statsTableFilters;
+    },
 };
 
 (function() {
@@ -49,5 +60,5 @@ const __APP_STATE__ = {
         },
     ];
 
-    __APP_STATE__.statsTableAvaliableCountries = __APP_STATE__.statsTableData.map(item => item.country); 
+    __APP_STATE__.statsTableAvaliableCountries = __APP_STATE__.statsTableData.map(item => item.country);
 })();

@@ -17,10 +17,19 @@
     const COLUMNS_SHOWN_KEY = "columns-shown";
     const MIN_TOTAL_USERS_KEY = "min-total-users";
 
-    const DEFAULT_MIN_TOTAL_USERS_KEY = 0;
+    const DEFAULT_MIN_TOTAL_USERS = 0;
+    const DEFAULT_COLUMNS_SHOWN = [
+        tableColumnKeys.country,
+        tableColumnKeys.numberOfCompanies,
+        tableColumnKeys.numberOfEmployees,
+        tableColumnKeys.totalUsers
+    ];
 
-    function renderTable(config) {
-        config[MIN_TOTAL_USERS_KEY] = !config[MIN_TOTAL_USERS_KEY] ? DEFAULT_MIN_TOTAL_USERS_KEY : config[MIN_TOTAL_USERS_KEY];
+    function renderTable() {
+        const config = __APP_STATE__.getStatsTableFilters() || {};
+
+        config[MIN_TOTAL_USERS_KEY] = !config[MIN_TOTAL_USERS_KEY] ? DEFAULT_MIN_TOTAL_USERS : config[MIN_TOTAL_USERS_KEY];
+        config[COLUMNS_SHOWN_KEY] = !config[COLUMNS_SHOWN_KEY] ? DEFAULT_COLUMNS_SHOWN : config[COLUMNS_SHOWN_KEY];
 
         if (typeof $$ === "object") {
             const tableContainer = document.getElementById("stats-table-section");
@@ -34,7 +43,7 @@
                 "table_sticky-header",
                 "table_spacing_xl",
                 "table_gap-y_xl",
-                "table_height_s"
+                "table_height_s",
             ]);
     
             const filteredTableData = __APP_STATE__.statsTableData.filter(record => {
@@ -91,6 +100,10 @@
                 [MIN_TOTAL_USERS_KEY]: F.FormParser.getTextValue(form, MIN_TOTAL_USERS_KEY),           
             };
 
+            console.log(formValues);
+
+            __APP_STATE__.setStatsTableFilters(formValues);
+
             const validationResult = F.FormValidation.validate(formValues, formValidationSchema);
     
             for (const formKey in formValues) {
@@ -110,7 +123,20 @@
                 return;
             }
 
-            renderTable(formValues);
+            renderTable();
         });
+
+        const statsTableFilters = __APP_STATE__.getStatsTableFilters();
+    
+        form.elements[COUNTRY_SELECT_KEY].value = statsTableFilters[COUNTRY_SELECT_KEY];
+        form.elements[MIN_TOTAL_USERS_KEY].value = statsTableFilters[MIN_TOTAL_USERS_KEY];
+
+        Array.from(form.elements[COLUMNS_SHOWN_KEY]).forEach(checkbox => {
+            if (statsTableFilters[COLUMNS_SHOWN_KEY].includes(checkbox.value)) {
+                checkbox.checked = true;
+            }
+        });
+
+        renderTable();
     }
 })();
