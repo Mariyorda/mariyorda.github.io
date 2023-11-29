@@ -55,13 +55,13 @@ const $$ = (function() {
                 const col = document.createElement(isHeaderRow ? "th" : "td");
                 
                 col.classList.add(HTMLTableRow.tableRowClasses.td);
-
-                if (isHeaderRow) {
-                    col.classList.add(HTMLTableRow.tableRowClasses.th);
-                }
                 
                 this.cols.push(col);
                 this.row.appendChild(col);
+            }
+
+            if (isHeaderRow) {
+                this.row.classList.add(HTMLTableRow.tableRowClasses.th);
             }
 
             this.row.classList.add(HTMLTableRow.tableRowClasses.tr, ...classNames);

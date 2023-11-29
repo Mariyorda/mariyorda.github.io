@@ -22,7 +22,7 @@
         tableColumnKeys.country,
         tableColumnKeys.numberOfCompanies,
         tableColumnKeys.numberOfEmployees,
-        tableColumnKeys.totalUsers
+        tableColumnKeys.totalUsers,
     ];
 
     function renderTable() {
@@ -32,12 +32,12 @@
         config[COLUMNS_SHOWN_KEY] = !config[COLUMNS_SHOWN_KEY] ? DEFAULT_COLUMNS_SHOWN : config[COLUMNS_SHOWN_KEY];
 
         if (typeof $$ === "object") {
-            const tableContainer = document.getElementById("stats-table-section");
-    
-            const colsNumber = config[COLUMNS_SHOWN_KEY].length;
+            const tableContainer = document.getElementById(__CONSTANTS__.STATS_SECTION_ID);
+
+            const columnsNumber = config[COLUMNS_SHOWN_KEY].length;
             
             const table = new $$.HTMLTable([
-                `table_cols_${colsNumber}`,
+                `table_cols_${columnsNumber}`,
                 "table_fullwidth",
                 "table_dark",
                 "table_sticky-header",
@@ -53,7 +53,7 @@
                 ].every(Boolean);
             });
     
-            const tableHeaderRow = new $$.HTMLTableRow(colsNumber, [], true);
+            const tableHeaderRow = new $$.HTMLTableRow(columnsNumber, [], true);
             
             config[COLUMNS_SHOWN_KEY].forEach((key, i) => {
                 tableHeaderRow.getCol(i).textContent = tableColumnHeadings[key];
@@ -62,7 +62,7 @@
             table.addHeaderRow(tableHeaderRow);
     
             filteredTableData.forEach(record => {
-                const tableRow = new $$.HTMLTableRow(colsNumber, []);
+                const tableRow = new $$.HTMLTableRow(columnsNumber, []);
     
                 config[COLUMNS_SHOWN_KEY].forEach((key, i) => {
                     tableRow.getCol(i).textContent = record[key];
@@ -89,7 +89,7 @@
                 .max(100000, "Max value is 100000"),
         }
     
-        const form = document.getElementById("stats-table-form");
+        const form = document.getElementById(__CONSTANTS__.STATS_FORM_ID);
         
         form.addEventListener("submit", event => {
             event.preventDefault();

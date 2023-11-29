@@ -74,6 +74,10 @@
     gap: var(--spacing-ul);
 }
 
+.flex_gap_uul {
+    gap: calc(1.5 * var(--spacing-ul));
+}
+
 @media screen and (max-width: 1200px) {
     .flex_column_bp_l {
         flex-direction: column;

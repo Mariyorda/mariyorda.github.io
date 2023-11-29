@@ -3,3 +3,12 @@
     color: var(--font-primary-light);
     text-align: left;
 }
+
+.table__row_empty {
+    height: 48px;
+}
+
+.table__row_error {
+    height: 64px;
+    place-items: center;
+}

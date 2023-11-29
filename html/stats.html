@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="../css/pages/stats.css">
     <script src="../js/startup.js"></script>
     <script src="../js/active.js" defer></script>
+    <script src="../js/constants.js" defer></script>
+    <script src="../js/utils.js" defer></script>
     <script src="../js/appstate.js" defer></script>
     <script src="../js/table.js" defer></script>
     <script src="../js/form-utils.js" defer></script>
     <script src="../js/stats-table.js" defer></script>
+    <script src="../js/users-table.js" defer></script>
 </head>
 <body class="flex flex_column">
     <header class="header flex flex_align_center flex_justify_between flex_column_bp_s flex_gap_l_bp_s">
@@ -57,7 +60,7 @@
                                     <input class="input input_fullwidth input_bg-color_light input_p_l input_border-radius_l" type="text" name="min-total-users" placeholder="e.g. 100">
                                     <span class="input__error-message input__error-message_hidden text text_font-size_s"></span>
                                 </label>
-                                <button class="button button_small button_primary text text_color_primary-light" type="submit">Filter</button>
+                                <button class="button button_medium button_primary text text_color_primary-light" type="submit">Filter</button>
                             </div>
                             <fieldset class="fieldset flex_grow_1">
                                 <legend class="text text_paragraph text_color_primary-light text_font-weight_medium">Shown columns</legend>
@@ -94,61 +97,70 @@
                             </fieldset>
                         </form>
                     </section>
-                    <section id="stats-table-section">
-                        <table class="table table_cols_4 table_fullwidth table_dark table_sticky-header table_spacing_xl table_gap-y_xl table_height_s">
-                            <thead class="table__head">
-                                <tr class="table__row table__row_head">
-                                    <th class="table__col table__col_head">Country</th>
-                                    <th class="table__col table__col_head">Number of companies</th>
-                                    <th class="table__col table__col_head">Number of employees</th>
-                                    <th class="table__col table__col_head">Total users</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table__body">
-                                <tr class="table__row">
-                                    <td class="table__col">Russia</td>
-                                    <td class="table__col">100</td>
-                                    <td class="table__col">50</td>
-                                    <td class="table__col">150</td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__col">Serbia</td>
-                                    <td class="table__col">200</td>
-                                    <td class="table__col">20</td>
-                                    <td class="table__col">220</td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__col">Finland</td>
-                                    <td class="table__col">200</td>
-                                    <td class="table__col">20</td>
-                                    <td class="table__col">220</td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__col">USA</td>
-                                    <td class="table__col">500</td>
-                                    <td class="table__col">50</td>
-                                    <td class="table__col">550</td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__col">France</td>
-                                    <td class="table__col">500</td>
-                                    <td class="table__col">50</td>
-                                    <td class="table__col">550</td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__col">Ukraine</td>
-                                    <td class="table__col">500</td>
-                                    <td class="table__col">50</td>
-                                    <td class="table__col">550</td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__col">Poland</td>
-                                    <td class="table__col">500</td>
-                                    <td class="table__col">50</td>
-                                    <td class="table__col">550</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <section class="flex flex_column flex_gap_uul">
+                        <section id="stats-table-section">
+                            <table class="table table_cols_4 table_fullwidth table_dark table_sticky-header table_spacing_xl table_gap-y_xl table_height_s">
+                                <thead class="table__head">
+                                    <tr class="table__row table__row_head">
+                                        <th class="table__col table__col_head">Country</th>
+                                        <th class="table__col table__col_head">Number of companies</th>
+                                        <th class="table__col table__col_head">Number of employees</th>
+                                        <th class="table__col table__col_head">Total users</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__col">Russia</td>
+                                        <td class="table__col">100</td>
+                                        <td class="table__col">50</td>
+                                        <td class="table__col">150</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Serbia</td>
+                                        <td class="table__col">200</td>
+                                        <td class="table__col">20</td>
+                                        <td class="table__col">220</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Finland</td>
+                                        <td class="table__col">200</td>
+                                        <td class="table__col">20</td>
+                                        <td class="table__col">220</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">USA</td>
+                                        <td class="table__col">500</td>
+                                        <td class="table__col">50</td>
+                                        <td class="table__col">550</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">France</td>
+                                        <td class="table__col">500</td>
+                                        <td class="table__col">50</td>
+                                        <td class="table__col">550</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Ukraine</td>
+                                        <td class="table__col">500</td>
+                                        <td class="table__col">50</td>
+                                        <td class="table__col">550</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Poland</td>
+                                        <td class="table__col">500</td>
+                                        <td class="table__col">50</td>
+                                        <td class="table__col">550</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <section class="flex flex_column flex_gap_xl">
+                            <div class="flex flex_justify_between flex_align_center">  
+                                <h3 class="text text_heading_3 text_color_primary-light text_font-weight_medium">Users</h3>
+                                <button id="users-update" class="button button_medium button_primary text text_color_primary-light">Update</button>
+                            </div>
+                            <section id="users-table-section"></section>
+                        </section>
                     </section>
                 </section>
             </div>
