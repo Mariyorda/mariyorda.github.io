@@ -116,7 +116,12 @@ const F = (function() {
         min(minValue, message) {
             this.assertions.push(
                 this._assertion(
-                    value => !this._isNumeric(value) || Number(value) >= minValue,
+                    /**
+                     * @param {string} value - Value being checked
+                     * @param options - Config object, options.min - min integer value  
+                     * @description Check if the string is an integer (within boundaries)
+                     */                    
+                    value => !this._isNumeric(value) || validator.isInt(value, {min: minValue}),
                     message,
                 )
             );
@@ -127,7 +132,12 @@ const F = (function() {
         max(maxValue, message) {
             this.assertions.push(
                 this._assertion(
-                    value => !this._isNumeric(value) || Number(value) <= maxValue,
+                    /**
+                     * @param {string} value - Value being checked
+                     * @param options - Config object, options.max - max integer value  
+                     * @description Check if the string is an integer (within boundaries)
+                     */
+                    value => !this._isNumeric(value) || validator.isInt(value, {max: maxValue}),
                     message,
                 )
             );
@@ -138,7 +148,12 @@ const F = (function() {
         minLength(minLength, message) {
             this.assertions.push(
                 this._assertion(
-                    value => !this._hasLength(value) || value.length >= minLength,
+                    /**
+                     * @param {string} value - Value being checked
+                     * @param options - Config object, options.minLength - min possible string length  
+                     * @description Check if the string's length falls in a range
+                     */       
+                    value => !this._hasLength(value) || validator.isLength(value, {min: minLength}),
                     message,
                 )
             );
@@ -149,7 +164,12 @@ const F = (function() {
         maxLength(maxLength, message) {
             this.assertions.push(
                 this._assertion(
-                    value => !this._hasLength(value) || value.length <= maxLength,
+                    /**
+                     * @param {string} value - Value being checked
+                     * @param options - Config object, options.maxLength - max possible string length  
+                     * @description Check if the string's length falls in a range
+                     */      
+                    value => !this._hasLength(value) || validator.isLength(value, {max: maxLength}),
                     message,
                 )
             );
@@ -191,7 +211,11 @@ const F = (function() {
         }
 
         _isNumeric(value) {
-            return Number.isFinite(Number(value));
+            /**
+             * @param {string} value - Value being checked
+             * @description Check if the string contains only numbers
+             */   
+            return validator.isNumeric(value);
         }
 
         _isArray(value) {
@@ -203,7 +227,11 @@ const F = (function() {
         }
 
         _isEmpty(value) {
-            return value.length === 0;
+            /**
+             * @param {string} value - Value being checked
+             * @description Check if the string has a length of zero
+             */   
+            return validator.isEmpty(value);
         }
 
         _assertion(fn, message = this.defaultErrorMessage) {
