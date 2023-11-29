@@ -82,7 +82,7 @@ const F = (function() {
             this.assertions.push(
                 this._assertion(
                     value => {
-                        return this._isNil(value) || this._isString(value) && this._isNumeric(value);
+                        return this._isNil(value) || this._isEmpty(value) || this._isString(value) && this._isNumeric(value);
                     },
                     message,
                 )

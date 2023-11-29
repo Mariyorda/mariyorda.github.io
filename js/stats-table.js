@@ -78,7 +78,7 @@
 
     // FORM
 
-    if (typeof F === "object") {
+    if (typeof F === "object" && typeof validator === "object") {
         const formValidationSchema = {
             [COUNTRY_SELECT_KEY]: new F.FormValidationRule(COUNTRY_SELECT_KEY)
                 .string()
@@ -99,8 +99,6 @@
                 [COLUMNS_SHOWN_KEY]: F.FormParser.getCheckboxValues(form, COLUMNS_SHOWN_KEY),
                 [MIN_TOTAL_USERS_KEY]: F.FormParser.getTextValue(form, MIN_TOTAL_USERS_KEY),           
             };
-
-            console.log(formValues);
 
             __APP_STATE__.setStatsTableFilters(formValues);
 
