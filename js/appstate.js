@@ -66,11 +66,28 @@ const __APP_STATE__ = {
 
     __APP_STATE__.statsTableAvaliableCountries = __APP_STATE__.statsTableData.map(item => item.country);
 
-    addEventListener(__CONSTANTS__.USERS_LOADING_START, event => {
+    addEventListener(__CONSTANTS__.USERS_LOADING_START, async event => {
       __APP_STATE__.usersTableDataLoading = true;
   
       dispatchEvent(__UTILS__.createCustomEvent(__CONSTANTS__.USERS_LOADING_STATUS_CHANGE, __CONSTANTS__.FETCH_STATUS_PENDING)); 
   
+      try {
+          const response = await fetch("https://jsonplaceholder.typicode.com/users");
+          const json = await response.json();
+          
+          dispatchEvent(
+              __UTILS__.createCustomEvent(
+                  __CONSTANTS__.USERS_LOADING_SUCCESS,
+                  {data: json.filter(record => record.username.length >= event.detail.filter.minUsernameLength)}
+              )
+          );
+      } catch (error) {
+          dispatchEvent(__UTILS__.createCustomEvent(__CONSTANTS__.USERS_LOADING_FAIL, {error}));
+      } finally {
+          __APP_STATE__.usersTableDataLoading = false;
+      }
+
+      /*
       fetch("https://jsonplaceholder.typicode.com/users")
         .then(response => response.json())
         .then(json => {
@@ -85,6 +102,7 @@ const __APP_STATE__ = {
           dispatchEvent(__UTILS__.createCustomEvent(__CONSTANTS__.USERS_LOADING_FAIL, {error}));
         })
         .finally(() => __APP_STATE__.usersTableDataLoading = false);
+      */
     });
 
     addEventListener(__CONSTANTS__.USERS_LOADING_SUCCESS, event => {
