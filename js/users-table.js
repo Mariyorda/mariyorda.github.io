@@ -53,7 +53,7 @@
                 [0, 0, 0].forEach(record => {
                     const tableRow = new $$.HTMLTableRow(
                         columnsNumber,
-                        isLoading ? ["table__row_empty"] : [],
+                        "table__row_empty",
                     );
                     table.addRow(tableRow);
                 });

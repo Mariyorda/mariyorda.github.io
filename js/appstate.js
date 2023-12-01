@@ -112,7 +112,6 @@ const __APP_STATE__ = {
 
     addEventListener(__CONSTANTS__.USERS_LOADING_FAIL, event => {
       __APP_STATE__.usersTableError = event.detail.error;
-
       dispatchEvent(__UTILS__.createCustomEvent(__CONSTANTS__.USERS_LOADING_STATUS_CHANGE, __CONSTANTS__.FETCH_STATUS_FAIL));
     });
 })();
