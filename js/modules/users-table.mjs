@@ -97,10 +97,7 @@ const updateButton = document.getElementById("users-update");
 
 updateButton.addEventListener("click", () => {
     dispatchEvent(
-        createCustomEvent(
-            CustomEvents.usersTableLoadingStart,
-            {filter: {minUsernameLength: Math.floor(Math.random() * 5 + 6)}}
-        )
+        createCustomEvent(CustomEvents.usersTableLoadingStart, {})
     );
 });
 

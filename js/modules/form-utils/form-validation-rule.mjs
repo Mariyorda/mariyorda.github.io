@@ -62,7 +62,7 @@ export class FormValidationRule {
                  * @param options - Config object, options.min - min integer value  
                  * @description Check if the string is an integer (within boundaries)
                  */                    
-                value => !this._isNumeric(value) || validator.isInt(value, {min: minValue}),
+                value => !this._isNumeric(value) || validator.isInt(value, { min: minValue }),
                 message,
             )
         );
@@ -78,7 +78,7 @@ export class FormValidationRule {
                  * @param options - Config object, options.max - max integer value  
                  * @description Check if the string is an integer (within boundaries)
                  */
-                value => !this._isNumeric(value) || validator.isInt(value, {max: maxValue}),
+                value => !this._isNumeric(value) || validator.isInt(value, { max: maxValue }),
                 message,
             )
         );
@@ -94,7 +94,7 @@ export class FormValidationRule {
                  * @param options - Config object, options.minLength - min possible string length  
                  * @description Check if the string's length falls in a range
                  */       
-                value => !this._hasLength(value) || validator.isLength(value, {min: minLength}),
+                value => !this._hasLength(value) || validator.isLength(value, { min: minLength }),
                 message,
             )
         );
@@ -110,7 +110,7 @@ export class FormValidationRule {
                  * @param options - Config object, options.maxLength - max possible string length  
                  * @description Check if the string's length falls in a range
                  */      
-                value => !this._hasLength(value) || validator.isLength(value, {max: maxLength}),
+                value => !this._hasLength(value) || validator.isLength(value, { max: maxLength }),
                 message,
             )
         );

@@ -1,5 +1,5 @@
-import { createCustomEvent } from "./utils.mjs";
-import { CustomEvents, FetchStatus } from "./constants.mjs";
+import { createCustomEvent, getUsersUrl } from "./utils.mjs";
+import { FetchStatus, CustomEvents } from "./constants.mjs";
 
 export const APP_STATE = {
     statsTableData: [],
@@ -73,18 +73,17 @@ addEventListener(CustomEvents.usersTableLoadingStart, async event => {
 
   dispatchEvent(createCustomEvent(CustomEvents.usersTableLoadingStatusChange, FetchStatus.pending)); 
 
-  fetch("https://jsonplaceholder.typicode.com/users")
+  fetch(getUsersUrl())
     .then(response => response.json())
     .then(json => {
       dispatchEvent(
         createCustomEvent(
-          CustomEvents.usersTableLoadingSuccess,
-          {data: json.filter(record => record.username.length >= event.detail.filter.minUsernameLength)}
+          CustomEvents.usersTableLoadingSuccess, { data: json }
         )
       );
     })
     .catch(error => {
-      dispatchEvent(createCustomEvent(CustomEvents.usersTableLoadingFail, {error}));
+      dispatchEvent(createCustomEvent(CustomEvents.usersTableLoadingFail, { error }));
     })
     .finally(() => APP_STATE.usersTableDataLoading = false);
 });
