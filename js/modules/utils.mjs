@@ -3,6 +3,6 @@ export function createCustomEvent(name, detailObject) {
 }
 
 export function getUsersUrl() {
-    const id = Math.floor(Math.random() * 10);
+    const id = Math.floor(Math.random() * 20) + 1;
     return `https://jsonplaceholder.typicode.com/users?id_lte=${id}`;
 }
